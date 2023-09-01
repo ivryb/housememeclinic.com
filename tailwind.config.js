@@ -1,0 +1,117 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './components/**/*.{js,vue,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
+    './app.vue',
+    './node_modules/flowbite/**/*.js',
+  ],
+  theme: {
+    extend: {},
+    container: {
+      center: true,
+      padding: '1.5rem',
+    },
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
+    require('daisyui'),
+  ],
+
+  daisyui: {
+    themes: [
+      'light',
+      'dark',
+      'cupcake',
+      'bumblebee',
+      'emerald',
+      'corporate',
+      'synthwave',
+      'retro',
+      'cyberpunk',
+      'valentine',
+      'halloween',
+      'garden',
+      'forest',
+      'aqua',
+      'lofi',
+      'pastel',
+      'fantasy',
+      'wireframe',
+      'black',
+      'luxury',
+      'dracula',
+      'cmyk',
+      'autumn',
+      'business',
+      'acid',
+      'lemonade',
+      'night',
+      'coffee',
+      'winter',
+      {
+        'cyberpunk-2': {
+          // Cyberpunk defaults
+          'color-scheme': 'light',
+          fontFamily:
+            'ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace',
+          '--rounded-box': '0',
+          '--rounded-btn': '0',
+          '--rounded-badge': '0',
+          '--tab-radius': '0',
+
+          // Cyberpunk default colors
+          primary: '#ff7598',
+          secondary: '#75d1f0',
+          accent: '#c07eec',
+          neutral: '#423f00',
+          // default yellow: '#ffee00'
+          // better suggested yellow
+          'neutral-content': '#ffe000',
+          base: '#ffe000',
+          'base-100': '#ffe000',
+          'base-content': '#111',
+          // 'primary-content': '#ffe000',
+
+          // Business
+          // 'color-scheme': 'dark',
+          // primary: '#1C4E80',
+          // secondary: '#7C909A',
+          // accent: '#EA6947',
+          // neutral: '#23282E',
+          // 'base-100': '#202020',
+          // info: '#0091D5',
+          // success: '#6BB187',
+          // warning: '#DBAE59',
+          // error: '#AC3E31',
+          // '--rounded-box': '0.25rem',
+          // '--rounded-btn': '.125rem',
+          // '--rounded-badge': '.125rem',
+
+          // Random generated
+          // 'color-scheme': 'dark',
+          // primary: '#e779c1',
+          // secondary: '#58c7f3',
+          // accent: '#f3cc30',
+          // neutral: '#221551',
+          // 'neutral-content': '#f9f7fd',
+          // 'base-100': '#1a103d',
+          // 'base-content': '#f9f7fd',
+          // info: '#53c0f3',
+          // 'info-content': '#201047',
+          // success: '#71ead2',
+          // 'success-content': '#201047',
+          // warning: '#f3cc30',
+          // 'warning-content': '#201047',
+          // error: '#e24056',
+          // 'error-content': '#f9f7fd',
+        },
+      },
+    ],
+  },
+};

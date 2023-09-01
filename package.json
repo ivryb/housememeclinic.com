@@ -21,6 +21,7 @@
     "@nuxtjs/plausible": "^0.2.1",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@tailwindcss/typography": "^0.5.9",
+    "ai": "^2.2.11",
     "daisyui": "^3.6.4",
     "lodash-es": "^4.17.21",
     "marked": "^7.0.5",

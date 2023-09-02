@@ -1,11 +1,11 @@
 # To do
 
-- _rate limit_
 - cover image
 - share the response
 
 # Done
 
+- _rate limit_
 - footer with link
 - analytics
 - start new patient

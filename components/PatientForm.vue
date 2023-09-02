@@ -65,7 +65,11 @@ const visibleErrorMessage = computed(() => {
   if (!message) return '';
 
   if (message.includes('402')) {
-    return `Oops, looks like you're out of your 10 free daily messages(\nTry talk to House tomorrow, or contact us via Twitter (X): @ivryb`;
+    return `Oops! Looks like you have reached the limit of 5 messages per patient(\nIf you have any questions — contact us via Twitter (X): @ivryb`;
+  }
+
+  if (message.includes('429')) {
+    return `Oops, looks like you're out of your 10 free daily patients(\nTry talk to House tomorrow, or contact us via Twitter (X): @ivryb`;
   }
 
   return message;

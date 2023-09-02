@@ -3,5 +3,6 @@
     <div class="container mx-auto pt-12 pb-24 flex-1">
       <NuxtPage />
     </div>
+    <AppFooter />
   </div>
 </template>

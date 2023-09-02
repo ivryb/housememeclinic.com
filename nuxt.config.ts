@@ -5,18 +5,19 @@ export default defineNuxtConfig({
     openAiKey: process.env.NUXT_OPEN_AI_KEY,
   },
 
-  modules: [
-    // '@pinia/nuxt',
-    // '@nuxt/image',
-    // '@nuxtjs/plausible',
-    'nuxt-icon',
-  ],
+  modules: ['@nuxtjs/plausible', 'nuxt-icon'],
 
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
+  },
+
+  plausible: {
+    apiHost: 'https://analytics.rybnikov.rocks',
+    domain: process.env.NUXT_PUBLIC_APP_DOMAIN,
+    trackLocalhost: false,
   },
 
   css: ['~/assets/css/main.css'],
